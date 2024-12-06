@@ -1,5 +1,14 @@
+import clsx from "clsx";
 import type { Metadata } from "next";
+import { Barlow, Barlow_Condensed, Bellefair } from "next/font/google";
 import "./globals.css";
+
+const bellefair = Bellefair({ weight: ["400"], variable: "--bellefair" });
+const barlowCondensed = Barlow_Condensed({
+  weight: ["400"],
+  variable: "--barlow-condensed",
+});
+const barlow = Barlow({ weight: ["400"], variable: "--barlow" });
 
 export const metadata: Metadata = {
   title: "Space Tourism Website",
@@ -13,7 +22,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <body
+        className={clsx(
+          bellefair.variable,
+          barlow.variable,
+          barlowCondensed.variable,
+          "antialiased",
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }

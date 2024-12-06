@@ -7,10 +7,15 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      bellefair: "var(--bellefair)",
+      barlow: "var(--barlow)",
+      "barlow-condensed": "var(--barlow-condensed)",
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        dark: "#0B0D17",
+        light: "#D0D6F9",
       },
     },
   },

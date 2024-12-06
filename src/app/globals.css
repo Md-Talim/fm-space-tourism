@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  /* Test styles */
+  .heading-1 {
+    @apply font-bellefair text-[80px] uppercase text-white sm:text-[144px];
+  }
+
+  .heading-2 {
+    @apply font-bellefair text-[56px] uppercase text-white sm:text-[80px] md:text-[96px];
+  }
+
+  .heading-3 {
+    @apply font-bellefair text-[24px] uppercase text-white sm:text-[40px] md:text-[56px];
+  }
+
+  .heading-4 {
+    @apply font-bellefair text-[18px] uppercase text-white sm:text-[24px] md:text-[32px];
+  }
+
+  .heading-5 {
+    @apply font-bellefair text-[16px] uppercase text-white md:text-[28px];
+  }
+
+  .condensed-1 {
+    @apply font-barlow-condensed text-[20px] uppercase tracking-[4px] text-light md:text-[28px];
+  }
+
+  .condensed-2 {
+    @apply font-barlow-condensed text-sm uppercase tracking-[2px] text-white;
+  }
+
+  .condensed-3 {
+    @apply font-barlow-condensed text-sm uppercase tracking-[2px] text-white md:text-base;
+  }
+
+  .paragraph {
+    @apply font-barlow text-[15px] leading-[180%] text-light sm:text-base md:text-lg;
+  }
+}
