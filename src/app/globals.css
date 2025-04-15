@@ -1,33 +1,25 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --dark: "#0B0D17";
-  --light: "#D0D6F9";
+  --dark: #0b0d17;
+  --light: #d0d6f9;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-dark: var(--dark);
+  --color-light: var(--light);
   --font-bellefair: var(--bellefair);
   --font-condensed: var(--barlow-condensed);
   --font-barlow: var(--barlow);
-  --text-light: var(--light);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-dark text-light;
   }
 }
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-}
-
 @utility heading-1 {
   @apply font-bellefair text-[80px] text-white uppercase sm:text-[144px];
 }

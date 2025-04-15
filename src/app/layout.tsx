@@ -1,3 +1,4 @@
+import { Navbar } from "@/components/navigation";
 import clsx from "clsx";
 import type { Metadata } from "next";
 import { Barlow, Barlow_Condensed, Bellefair } from "next/font/google";
@@ -15,11 +16,11 @@ export const metadata: Metadata = {
   description: "Travel to space.",
 };
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) => {
   return (
     <html lang="en">
       <body
@@ -27,11 +28,14 @@ export default function RootLayout({
           bellefair.variable,
           barlow.variable,
           barlowCondensed.variable,
-          "antialiased",
+          "bg-dark antialiased",
         )}
       >
+        <Navbar />
         {children}
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
