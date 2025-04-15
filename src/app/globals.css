@@ -1,42 +1,65 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer utilities {
-  /* Test styles */
-  .heading-1 {
-    @apply font-bellefair text-[80px] uppercase text-white sm:text-[144px];
-  }
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --dark: "#0B0D17";
+  --light: "#D0D6F9";
+}
 
-  .heading-2 {
-    @apply font-bellefair text-[56px] uppercase text-white sm:text-[80px] md:text-[96px];
-  }
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-bellefair: var(--bellefair);
+  --font-condensed: var(--barlow-condensed);
+  --font-barlow: var(--barlow);
+  --text-light: var(--light);
+}
 
-  .heading-3 {
-    @apply font-bellefair text-[24px] uppercase text-white sm:text-[40px] md:text-[56px];
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
   }
+}
 
-  .heading-4 {
-    @apply font-bellefair text-[18px] uppercase text-white sm:text-[24px] md:text-[32px];
-  }
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
 
-  .heading-5 {
-    @apply font-bellefair text-[16px] uppercase text-white md:text-[28px];
-  }
+@utility heading-1 {
+  @apply font-bellefair text-[80px] text-white uppercase sm:text-[144px];
+}
 
-  .condensed-1 {
-    @apply font-barlow-condensed text-[20px] uppercase tracking-[4px] text-light md:text-[28px];
-  }
+@utility heading-2 {
+  @apply font-bellefair text-[56px] text-white uppercase sm:text-[80px] md:text-[96px];
+}
 
-  .condensed-2 {
-    @apply font-barlow-condensed text-sm uppercase tracking-[2px] text-white;
-  }
+@utility heading-3 {
+  @apply font-bellefair text-[24px] text-white uppercase sm:text-[40px] md:text-[56px];
+}
 
-  .condensed-3 {
-    @apply font-barlow-condensed text-sm uppercase tracking-[2px] text-white md:text-base;
-  }
+@utility heading-4 {
+  @apply font-bellefair text-[18px] text-white uppercase sm:text-[24px] md:text-[32px];
+}
 
-  .paragraph {
-    @apply font-barlow text-[15px] leading-[180%] text-light sm:text-base md:text-lg;
-  }
+@utility heading-5 {
+  @apply font-bellefair text-[16px] text-white uppercase md:text-[28px];
+}
+
+@utility condensed-1 {
+  @apply text-light font-condensed text-[20px] tracking-[4px] uppercase md:text-[28px];
+}
+
+@utility condensed-2 {
+  @apply font-condensed text-sm tracking-[2px] text-white uppercase;
+}
+
+@utility condensed-3 {
+  @apply font-condensed text-sm tracking-[2px] text-white uppercase md:text-base;
+}
+
+@utility paragraph {
+  @apply font-barlow text-light text-[15px] leading-[180%] sm:text-base md:text-lg;
 }
