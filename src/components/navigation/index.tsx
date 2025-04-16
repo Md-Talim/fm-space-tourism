@@ -21,7 +21,7 @@ export const Navbar = () => {
           <NavLink index={0} label="Home" link="/" />
           <NavLink index={1} label="Destination" link="/destination" />
           <NavLink index={2} label="Crew" link="/crew" />
-          <NavLink index={3} label="Techonology" link="/techonology" />
+          <NavLink index={3} label="Techonology" link="/technology" />
         </ul>
       </nav>
 
