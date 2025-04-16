@@ -1,3 +1,4 @@
+import { BackgroundImage } from "@/components/background-image";
 import { Navbar } from "@/components/navigation";
 import clsx from "clsx";
 import type { Metadata } from "next";
@@ -31,6 +32,7 @@ const RootLayout = ({
           "bg-dark antialiased",
         )}
       >
+        <BackgroundImage />
         <Navbar />
         {children}
       </body>
