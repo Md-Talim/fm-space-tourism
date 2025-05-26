@@ -22,7 +22,7 @@ export const MobileNav = () => {
   return (
     <div className="sm:hidden">
       <button
-        className="relative z-999 h-10 cursor-pointer p-2.5 pr-6 md:hidden md:pr-10 lg:pr-16"
+        className="relative z-[1001] h-10 cursor-pointer p-2.5 pr-6 md:hidden md:pr-10 lg:pr-16"
         onClick={handleMenuExpand}
       >
         <Image
@@ -36,10 +36,10 @@ export const MobileNav = () => {
 
       <nav
         className={clsx(
-          "bg-blur absolute top-0 right-0 h-screen overflow-x-hidden pt-32 pl-8 transition-all duration-300 ease-in-out",
+          "bg-blur absolute top-0 right-0 z-[1000] h-screen overflow-x-hidden pt-32 pl-8 transition-all duration-300 ease-in-out",
           isExpanded
             ? "translate-x-0 opacity-100"
-            : "pointer-events-none hidden translate-x-full opacity-0",
+            : "pointer-events-none translate-x-full opacity-0",
         )}
       >
         <ul className="flex flex-col gap-7">
