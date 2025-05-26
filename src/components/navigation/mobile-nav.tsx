@@ -36,10 +36,10 @@ export const MobileNav = () => {
 
       <nav
         className={clsx(
-          "bg-blur pl-8 absolute top-0 right-0 pt-32 transition-all duration-300 ease-in-out h-screen",
+          "bg-blur absolute top-0 right-0 h-screen overflow-x-hidden pt-32 pl-8 transition-all duration-300 ease-in-out",
           isExpanded
             ? "translate-x-0 opacity-100"
-            : "pointer-events-none translate-x-full opacity-0",
+            : "pointer-events-none hidden translate-x-full opacity-0",
         )}
       >
         <ul className="flex flex-col gap-7">

@@ -21,39 +21,39 @@
   }
 }
 
-@utility heading-1 {
+@utility text-preset-1 {
   @apply font-bellefair text-[80px] leading-none text-white uppercase sm:text-[144px];
 }
 
-@utility heading-2 {
+@utility text-preset-2 {
   @apply font-bellefair text-[56px] text-white uppercase sm:text-[80px] md:text-[96px];
 }
 
-@utility heading-3 {
+@utility text-preset-3 {
   @apply font-bellefair text-[24px] text-white uppercase sm:text-[40px] md:text-[56px];
 }
 
-@utility heading-4 {
+@utility text-preset-4 {
   @apply font-bellefair text-[18px] text-white uppercase sm:text-[24px] md:text-[32px];
 }
 
-@utility heading-5 {
+@utility text-preset-6 {
   @apply font-bellefair text-[16px] text-white uppercase md:text-[28px];
 }
 
-@utility condensed-1 {
+@utility text-preset-5 {
   @apply text-light font-condensed text-[20px] tracking-[4px] uppercase md:text-[28px];
 }
 
-@utility condensed-2 {
+@utility text-preset-7 {
   @apply font-condensed text-sm tracking-[2px] text-white uppercase;
 }
 
-@utility condensed-3 {
+@utility text-preset-8 {
   @apply font-condensed text-sm tracking-[2px] text-white uppercase md:text-base;
 }
 
-@utility paragraph {
+@utility text-preset-9 {
   @apply font-barlow text-light text-[15px] leading-[180%] sm:text-base md:text-lg;
 }
 

@@ -17,7 +17,7 @@ export const NavLink = ({ index, label, link }: Props) => {
   return (
     <Link
       className={clsx(
-        "condensed-3 flex h-24 items-center justify-center",
+        "text-preset-8 flex h-24 items-center justify-center",
         "border-b-2 border-b-transparent hover:border-b-2 hover:border-b-white/50",
         isCurrentPage && "border-b-white",
       )}
@@ -37,7 +37,7 @@ export const MobileNavLink = ({ index, label, link }: Props) => {
   return (
     <Link
       className={clsx(
-        "condensed-3",
+        "text-preset-8 w-[222px]",
         "border-r-2 border-r-transparent hover:border-r-2 hover:border-r-white/50",
         isCurrentPage && "border-r-white",
       )}

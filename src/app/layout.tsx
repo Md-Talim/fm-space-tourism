@@ -1,5 +1,5 @@
-import { BackgroundImage } from "@/components/background-image";
 import { Navbar } from "@/components/navigation";
+import { BackgroundImage } from "@/components/shared/background-image";
 import clsx from "clsx";
 import type { Metadata } from "next";
 import { Barlow, Barlow_Condensed, Bellefair } from "next/font/google";
@@ -32,7 +32,7 @@ const RootLayout = ({
           "antialiased",
         )}
       >
-        <div className="min-h-screen overflow-y-hidden">
+        <div className="min-h-screen overflow-x-hidden overflow-y-hidden">
           <BackgroundImage />
           <Navbar />
           <main>{children}</main>
