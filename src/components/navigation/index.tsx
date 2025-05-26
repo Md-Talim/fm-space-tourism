@@ -4,7 +4,7 @@ import { NavLink } from "./navlink";
 
 export const Navbar = () => {
   return (
-    <header className="relative flex items-center justify-between py-6 md:py-10">
+    <header className="relative flex items-center justify-between py-6 md:py-0 md:pt-10">
       {/* Logo */}
       <div className="pl-6 md:pl-10 lg:pl-16">
         <Image
