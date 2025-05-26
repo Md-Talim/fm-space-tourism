@@ -5,12 +5,21 @@ import type { Metadata } from "next";
 import { Barlow, Barlow_Condensed, Bellefair } from "next/font/google";
 import "./globals.css";
 
-const bellefair = Bellefair({ weight: ["400"], variable: "--bellefair" });
+const bellefair = Bellefair({
+  weight: ["400"],
+  variable: "--bellefair",
+  subsets: ["latin"],
+});
 const barlowCondensed = Barlow_Condensed({
   weight: ["400"],
   variable: "--barlow-condensed",
+  subsets: ["latin"],
 });
-const barlow = Barlow({ weight: ["400"], variable: "--barlow" });
+const barlow = Barlow({
+  weight: ["400"],
+  variable: "--barlow",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Space Tourism Website",
