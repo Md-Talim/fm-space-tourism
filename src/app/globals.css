@@ -22,7 +22,7 @@
 }
 
 @utility heading-1 {
-  @apply font-bellefair text-[80px] text-white uppercase sm:text-[144px];
+  @apply font-bellefair text-[80px] leading-none text-white uppercase sm:text-[144px];
 }
 
 @utility heading-2 {
@@ -55,6 +55,15 @@
 
 @utility paragraph {
   @apply font-barlow text-light text-[15px] leading-[180%] sm:text-base md:text-lg;
+}
+
+@utility center {
+  @apply flex items-center justify-center;
+}
+
+.bg-blur {
+  background: rgba(11, 13, 23, 0.15);
+  backdrop-filter: blur(40px);
 }
 
 /* Background images for different routes */

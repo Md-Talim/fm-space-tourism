@@ -29,12 +29,14 @@ const RootLayout = ({
           bellefair.variable,
           barlow.variable,
           barlowCondensed.variable,
-          "bg-dark antialiased",
+          "antialiased",
         )}
       >
-        <BackgroundImage />
-        <Navbar />
-        {children}
+        <div className="min-h-screen overflow-y-hidden">
+          <BackgroundImage />
+          <Navbar />
+          <main>{children}</main>
+        </div>
       </body>
     </html>
   );
