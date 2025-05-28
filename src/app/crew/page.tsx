@@ -42,15 +42,15 @@ const CrewPage = () => {
           </div>
         </div>
 
-        {/* TODO: add a mask shadow effect */}
-        <div className="center h-[352px] w-[300px] py-[26.5px] sm:h-[463px] sm:w-[446px] sm:py-[42px] md:mx-7 md:h-full md:w-full">
-          <Image
-            alt={selectedCrewMember.name}
-            className="mx-auto max-h-full w-auto object-top sm:max-w-full"
-            src={selectedCrewMember.images.webp}
-            width={540}
-            height={540}
-          />
+        <div className="py-[26.5px] sm:py-[42px] md:mx-7">
+          <div className="mask-gradient mx-auto max-h-full w-[300px] sm:h-[463px] sm:w-[446px] sm:max-w-full md:h-full md:w-full">
+            <Image
+              alt={selectedCrewMember.name}
+              src={selectedCrewMember.images.webp}
+              width={540}
+              height={540}
+            />
+          </div>
         </div>
       </section>
     </section>

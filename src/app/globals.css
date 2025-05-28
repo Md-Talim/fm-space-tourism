@@ -94,3 +94,20 @@
   @apply sm:bg-[url('/assets/technology/background-technology-tablet.jpg')];
   @apply md:bg-[url('/assets/technology/background-technology-desktop.jpg')];
 }
+
+.mask-gradient {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
