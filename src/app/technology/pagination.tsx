@@ -1,0 +1,31 @@
+"use client";
+import clsx from "clsx";
+
+interface Props {
+  selectedTechnologyIndex: number;
+  onTechnologyChane: (index: number) => void;
+}
+
+export const Pagination = ({
+  selectedTechnologyIndex,
+  onTechnologyChane,
+}: Props) => {
+  return (
+    <div className="flex gap-x-4">
+      {[0, 1, 2].map((item) => (
+        <button
+          key={item}
+          className={clsx(
+            "text-preset-4 aspect-square w-10 cursor-pointer rounded-full border sm:w-14 md:w-20",
+            item === selectedTechnologyIndex
+              ? "text-dark border-white bg-white"
+              : "text-light border-white/25",
+          )}
+          onClick={() => onTechnologyChane(item)}
+        >
+          {item + 1}
+        </button>
+      ))}
+    </div>
+  );
+};
