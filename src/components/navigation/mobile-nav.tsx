@@ -46,7 +46,7 @@ export const MobileNav = () => {
           <MobileNavLink index={0} label="Home" link="/" />
           <MobileNavLink index={1} label="Destination" link="/destination" />
           <MobileNavLink index={2} label="Crew" link="/crew" />
-          <MobileNavLink index={3} label="Techonology" link="/techonology" />
+          <MobileNavLink index={3} label="Techonology" link="/technology" />
         </ul>
       </nav>
     </div>
