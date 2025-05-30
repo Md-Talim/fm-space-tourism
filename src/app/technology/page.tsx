@@ -16,11 +16,13 @@ const TechnologyPage = () => {
   };
 
   return (
-    <section className="mx-auto max-w-[1110px] space-y-6 md:h-[792px]">
-      <PageTitle index={3} title="Space Launch 101" />
+    <section className="my-6 space-y-6 sm:my-10 md:ml-[165px] md:h-[792px] md:w-[1275px]">
+      <div className="sm:px-10 md:px-0">
+        <PageTitle index={3} title="Space Launch 101" />
+      </div>
 
       <section className="flex flex-col gap-8">
-        <div className="pt-20">
+        <div className="pt-20 sm:pt-16">
           <div className="relative h-[300px] overflow-hidden sm:hidden md:block">
             <Image
               src={selectedTechnology.images.portrait}
@@ -29,9 +31,17 @@ const TechnologyPage = () => {
               className="object-cover object-bottom"
             />
           </div>
+          <div className="relative hidden h-[356px] w-full sm:block md:hidden">
+            <Image
+              src={selectedTechnology.images.landscape}
+              alt={selectedTechnology.name}
+              fill
+              className="object-cover object-bottom"
+            />
+          </div>
         </div>
 
-        <div className="flex flex-col items-center gap-10 px-6">
+        <div className="flex flex-col items-center gap-10 px-6 sm:px-10">
           <Pagination
             selectedTechnologyIndex={selectedTechnologyIndex}
             onTechnologyChange={handleTechnologyChange}
