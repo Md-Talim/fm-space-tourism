@@ -3,12 +3,12 @@ import clsx from "clsx";
 
 interface Props {
   selectedTechnologyIndex: number;
-  onTechnologyChane: (index: number) => void;
+  onTechnologyChange: (index: number) => void;
 }
 
 export const Pagination = ({
   selectedTechnologyIndex,
-  onTechnologyChane,
+  onTechnologyChange,
 }: Props) => {
   return (
     <div className="flex gap-x-4">
@@ -21,7 +21,7 @@ export const Pagination = ({
               ? "text-dark border-white bg-white"
               : "text-light border-white/25",
           )}
-          onClick={() => onTechnologyChane(item)}
+          onClick={() => onTechnologyChange(item)}
         >
           {item + 1}
         </button>

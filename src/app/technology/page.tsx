@@ -34,7 +34,7 @@ const TechnologyPage = () => {
         <div className="flex flex-col items-center gap-10 px-6">
           <Pagination
             selectedTechnologyIndex={selectedTechnologyIndex}
-            onTechnologyChane={handleTechnologyChange}
+            onTechnologyChange={handleTechnologyChange}
           />
           <div className="space-y-4 text-center md:text-left">
             <div className="space-y-4">
