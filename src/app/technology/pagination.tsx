@@ -11,7 +11,7 @@ export const Pagination = ({
   onTechnologyChange,
 }: Props) => {
   return (
-    <div className="flex gap-x-4">
+    <div className="flex gap-x-4 md:flex-col md:gap-y-8">
       {[0, 1, 2].map((item) => (
         <button
           key={item}
