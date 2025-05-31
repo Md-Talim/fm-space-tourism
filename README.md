@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Mentor - Space tourism website solution
 
-## Getting Started
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Frontend Mentor - Space tourism website solution](#frontend-mentor---space-tourism-website-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+  - [Author](#author)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### The challenge
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Users should be able to:
 
-## Learn More
+- View the optimal layout for each of the website's pages depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each page and be able to toggle between the tabs to see new information
 
-To learn more about Next.js, take a look at the following resources:
+### Screenshot
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Homepage](./public/screenshot-homepage.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Links
 
-## Deploy on Vercel
+- Solution URL: [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/space-tourism-website-solution-XIeev4n06G)
+- Live Site URL: [https://fm-space-tourism-solution.vercel.app/](https://fm-space-tourism-solution.vercel.app/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## My process
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+My typical process involves reviewing the design files provided and then building out the components mobile-first, gradually adding styles for tablet and desktop views.
+
+### Built with
+
+- [Next.js](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - JavaScript superset
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+
+### What I learned
+
+During this project, I reinforced my skills in building responsive layouts and implementing a multi-page navigation structure with Next.js.
+
+### Continued development
+
+I plan to continue developing this project by:
+- Implementing the remaining styles, such as the horizontal line in the navbar for the desktop view.
+- Adding smooth animation effects. I am currently learning Framer Motion and intend to integrate animations as I progress.
+
+## Author
+
+- Name - Md Talim
+- Website - [md-talim.vercel.app](https://md-talim.vercel.app)
+- Frontend Mentor - [@Md-Talim](https://www.frontendmentor.io/profile/Md-Talim)
+- Twitter - [@talimbuilds](https://twitter.com/talimbuilds)
