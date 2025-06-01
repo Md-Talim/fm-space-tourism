@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/navigation";
+import { Navbar } from "@/components/navbar";
 import { BackgroundImage } from "@/components/shared/background-image";
 import clsx from "clsx";
 import type { Metadata } from "next";
