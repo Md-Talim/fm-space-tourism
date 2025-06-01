@@ -5,8 +5,10 @@ const HomePage = () => {
     <section className="mx-auto max-w-[1110px] p-6 sm:justify-between sm:p-32 md:p-0">
       <div className="flex flex-col sm:gap-16 md:flex-row md:pt-[289px]">
         <div className="space-y-6 max-md:text-center md:flex-1">
-          <p className="text-preset-5">So, You want to trave to</p>
-          <p className="text-preset-1">Space</p>
+          <h1 className="text-preset-5">
+            So, You want to trave to
+            <span className="text-preset-1 block">Space</span>
+          </h1>
           <p className="text-preset-9">
             Let&apos;s face it; if you want to go to space, you might as well
             genuinely go to outer space and not hover kind of on the edge of it.
