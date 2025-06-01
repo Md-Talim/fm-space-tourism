@@ -28,6 +28,7 @@ export const DestinationTab = ({
               ? "border-b-white text-white"
               : "text-light",
           )}
+          type="button"
         >
           {destination}
         </button>

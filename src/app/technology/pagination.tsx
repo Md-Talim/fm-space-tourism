@@ -22,6 +22,7 @@ export const Pagination = ({
               : "text-light border-white/25",
           )}
           onClick={() => onTechnologyChange(item)}
+          type="button"
         >
           {item + 1}
         </button>

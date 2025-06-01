@@ -1,4 +1,22 @@
 {
+  "links": [
+    {
+      "label": "Home",
+      "link": "/"
+    },
+    {
+      "label": "Destination",
+      "link": "/destination"
+    },
+    {
+      "label": "Crew",
+      "link": "/crew"
+    },
+    {
+      "label": "Technology",
+      "link": "/technology"
+    }
+  ],
   "destinations": [
     {
       "name": "Moon",

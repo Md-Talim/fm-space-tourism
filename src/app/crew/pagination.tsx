@@ -18,6 +18,7 @@ export const CrewMemberPagination = ({
               : "bg-gray-500 opacity-50 hover:opacity-100"
           }`}
           onClick={() => onSelectCrewMember(memberIndex)}
+          type="button"
         />
       ))}
     </div>

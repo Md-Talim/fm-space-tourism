@@ -1,11 +1,13 @@
 "use client";
 
+import data from "@/data.json";
 import clsx from "clsx";
 import Image from "next/image";
 import { useState } from "react";
 import { MobileNavLink } from "./navlink";
 
 export const MobileNav = () => {
+  const navigationLinks = data.links;
   const hamburgerIcon = "/assets/shared/icon-hamburger.svg";
   const closeIcon = "/assets/shared/icon-close.svg";
 
@@ -24,6 +26,7 @@ export const MobileNav = () => {
       <button
         className="relative z-[1001] h-10 cursor-pointer p-2.5 pr-6 md:hidden md:pr-10 lg:pr-16"
         onClick={handleMenuExpand}
+        type="button"
       >
         <Image
           src={menuIcon}
@@ -35,6 +38,7 @@ export const MobileNav = () => {
       </button>
 
       <nav
+        aria-label="Mobile navigation"
         className={clsx(
           "bg-blur absolute top-0 right-0 z-[1000] h-screen overflow-x-hidden pt-32 pl-8 transition-all duration-300 ease-in-out",
           isExpanded
@@ -43,10 +47,11 @@ export const MobileNav = () => {
         )}
       >
         <ul className="flex flex-col gap-7">
-          <MobileNavLink index={0} label="Home" link="/" />
-          <MobileNavLink index={1} label="Destination" link="/destination" />
-          <MobileNavLink index={2} label="Crew" link="/crew" />
-          <MobileNavLink index={3} label="Techonology" link="/technology" />
+          {navigationLinks.map(({ link, label }, index) => (
+            <li key={index}>
+              <MobileNavLink index={index} link={link} label={label} />
+            </li>
+          ))}
         </ul>
       </nav>
     </div>
